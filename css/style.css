@@ -242,7 +242,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../img/image33.jpeg) center center no-repeat;
     background-size: cover;
 }
 
@@ -609,5 +609,31 @@ body {
 .timetable-container tr:hover {
     background-color: #f1f1f1;
 }
+
+tyle>
+    /* Ensure the timetable is responsive */
+    .timetable-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    #timetableContainer {
+        overflow-x: auto; /* Allows horizontal scrolling */
+        width: 100%;
+    }
+
+    #timetable {
+        width: 100%;
+        min-width: 600px; /* Prevents table from being squeezed */
+        border-collapse: collapse;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+   
 
 

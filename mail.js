@@ -7,20 +7,32 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     const templateParams = {
         name: formData.get('name'),
         email: formData.get('email'),
+        subject: formData.get('subject'),
         message: formData.get('message')
     };
 
-    const serviceID = 'service_fvv2d8m'; 
-    const templateID = 'template_cs90268';
+    const responseElement = document.querySelector('.response');
+
+    if(!templateParams.name || !templateParams.email || !templateParams.subject || !templateParams.message) {
+        responseElement.innerHTML = "Please fill in all fields!";
+        responseElement.classList.add('text-danger');
+        responseElement.classList.remove('text-success');
+        return;
+    }
+
+    const serviceID = 'service_3ckhtjq'; 
+    const templateID = 'template_73kev74';
 
     console.log('Form submission:', templateParams);
     emailjs.send(serviceID, templateID, templateParams)
     .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        document.querySelector('.response').innerHTML = "Email successfully sent!";
+        responseElement.innerHTML = "Email successfully sent!";
+        responseElement.classList.add('text-success');
+        responseElement.classList.remove('text-danger');
     }, function(error) {
-        console.error('FAILED...', error);
-        document.querySelector('.response').innerHTML = `Email sending failed: ${error.text || 'Unknown error'}`;
+        responseElement.innerHTML = `Email sending failed: ${error.text || 'Unknown error'}`;
+        responseElement.classList.add('text-danger');
+        responseElement.classList.remove('text-success');
     });
 
 });

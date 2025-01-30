@@ -1,755 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Future School HTML Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Future - Website" />
-	<meta name="author" content="merkulove">
-	<meta name="keywords" content="" />
-	<link rel="icon" href="./src/img/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <meta charset="utf-8">
+    <title>Future International School: Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="./img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-
 <body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
-	<div class="wrapper">
-		
-		<div class="main-section">
 
-			<header>
-				<div class="container">
-					<div class="header-content d-flex flex-wrap align-items-center">
-						<div class="logo">
-							<a href="index.html" title="">
-								<img src="./src/img/futureLogo.png" alt="" srcset="assets/img/01_Logo_2x.png 2x"> 
-							</a>
-						</div><!--logo end-->
-						<ul class="contact-add d-flex flex-wrap">
-							<li>
-								<div class="contact-info">
-									<img src="assets/img/icon1.png" alt="">
-									<div class="contact-tt">
-										<h4>Call</h4>
-										<span>+2 342 5446 67</span>
-									</div>
-								</div><!--contact-info end-->
-							</li>
-							<li>
-								<div class="contact-info">
-									<img src="assets/img/icon2.png" alt="">
-									<div class="contact-tt">
-										<h4>Work Time</h4>
-										<span>Mon - Fri 8 AM - 5 PM</span>
-									</div>
-								</div><!--contact-info end-->
-							</li>
-							<li>
-								<div class="contact-info">
-									<img src="assets/img/icon3.png" alt="">
-									<div class="contact-tt">
-										<h4>Address</h4>
-										<span>Franklin St, Greenpoint Ave</span>
-									</div>
-								</div><!--contact-info end-->
-							</li>
-						</ul><!--contact-information end-->
-						<div class="menu-btn">
-							<a href="#">
-								<span class="bar1"></span>
-								<span class="bar2"></span>
-								<span class="bar3"></span>
-							</a>
-						</div><!--menu-btn end-->
-					</div><!--header-content end-->
-					<div class="navigation-bar d-flex flex-wrap align-items-center">
-						<nav>
-							<ul>
-								<li><a class="active" href="index.html" title="">Home</a></li>
-								<li><a href="about.html" title="">About</a>
-									<ul>
-										<li><a href="events.html" title="">Events</a>
-											<ul>
-												<li><a href="event-single.html" title="">Event Single</a></li>
-											</ul>
-										</li>
-										<li><a href="schedule.html" title="">Schedule</a></li>
-										<li><a href="error.html" title="">404</a></li>
-									</ul>
-								</li>
-								<li><a href="#" title="">Classes</a>
-									<ul>
-										<li><a href="./classesone.html" title="">Future 1</a></li>
-										<li><a href="./classestwo.html" title="">Future 2</a></li>
-									</ul>
-								</li>
-								<li><a href="teachers.html" title="">Teachers</a>
-									<ul>
-										<li><a href="teacher-single.html" title="">Teacher Single</a></li>
-									</ul>
-								</li>
-								<li><a href="blog.html" title="">Blog</a>
-									<ul>
-										<li><a href="post.html" title="">Blog Single</a></li>
-									</ul>
-								</li>
-								<li><a href="contacts.html" title="">Contacts</a></li>
-							</ul>
-						</nav><!--nav end-->
-						<ul class="social-links ml-auto">
-							<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-						</ul>
-					</div><!--navigation-bar end-->
-				</div>
-			</header><!--header end-->
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="m-0 text-primary"><img src="./img/futureLogo.png" alt="loding...">Future</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="./index.html" class="nav-item nav-link active">Home</a>
+                    <a href="./about.html" class="nav-item nav-link">About Us</a>
+                    <a href="./blog.html" class="nav-item nav-link">Blog</a>
+                    <a href="./facility.html" class="nav-item nav-link">School Facilities</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Classes</a>
+                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+                            <a href="./scheduleOne.html" class="dropdown-item">Bright Future School</a>
+                            <a href="./scheduleTwo.html" class="dropdown-item">Future Leaders School</a>
+                        </div>
+                    </div>
+                    <a href="./contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
 
-			<div class="responsive-menu">
-				<ul>
-					<li><a href="index.html" title="">Home</a></li>
-					<li><a href="about.html" title="">About</a></li>
-					<li><a href="events.html" title="">Events</a></li>
-					<li><a href="event-single.html" title="">Event Single</a></li>
-					<li><a href="schedule.html" title="">Schedule</a></li>
-					<li><a href="classes.html" title="">Classes</a></li>
-					<li><a href="class-single.html" title="">Classe Single</a></li>
-					<li><a href="teachers.html" title="">Teachers</a></li>
-					<li><a href="teacher-single.html" title="">Teacher Single</a></li>
-					<li><a href="blog.html" title="">Blog</a></li>
-					<li><a href="post.html" title="">Blog Single</a></li>
-					<li><a href="contacts.html" title="">Contacts</a></li>
-					<li><a href="error.html" title="">404</a></li>
-				</ul>
-			</div><!--responsive-menu end-->
 
-			<section class="main-banner">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-7 col-md-7">
-							<div class="banner-text wow fadeInLeft" data-wow-duration="1000ms">
-								<h2>The Smarter  Way to Learn <span>Anything</span></h2>
-								<p>Mauris malesuada enim eget blandit gravida. Duis hendrerit cursus turpis, id mollis est rutrum nec. Sed interdum nisi id libero tincidunt, sit amet vestibulum tortor porttitor. Cras ligula lacus, ullamcorper sed</p>
-								
-							</div>
-						</div>
-						<div class="col-lg-5 col-md-5">
-							<div class="banner-img wow zoomIn" data-wow-duration="1000ms">
-								<img src="https://via.placeholder.com/497x586" alt="">
-							</div><!--banner-img end-->
-							<div class="elements-bg wow zoomIn" data-wow-duration="1000ms"></div>
-						</div>
-					</div>
-				</div>
-			</section><!--main-banner end-->
-			
-			<h2 class="main-title">Future</h2>
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="./img/image2.jpeg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future
+                                        For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">our educational approach nurtures
+                                        intellectual growth and creativity. </p>
 
-		</div><!--main-section end-->
+                                    <a href=""
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our
+                                        Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="./img/image1.jpeg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                        style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">The Best School For Your
+                                        Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Our sports programs encourage
+                                        teamwork, discipline, and physical fitness.</p>
 
-		<section class="about-us-section">
-			<div  class="container">
-				<div class="section-title text-center">
-					<h2>Welcome to <span>Future</span></h2>
-					<p>Nunc consectetur ex nunc, id porttitor leo semper eget. Vivamus interdum, mauris quis cursus sodales, urn</p>
-				</div><!--section-title end-->
-				<div class="about-sec">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-3 col-md-6 col-sm-6">
-								<div class="abt-col wow fadeInUp" data-wow-duration="1000ms">
-									<img src="assets/img/icon5.png" alt="">
-									<h3>Awesome Teachers</h3>
-									<p>Vivamus interdum, mauris interdum quis curdum  sodales</p>
-								</div><!--abt-col end-->
-							</div>
-							<div class="col-lg-3 col-md-6 col-sm-6">
-								<div class="abt-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
-									<img src="assets/img/icon7.png" alt="">
-									<h3>Global Certificate</h3>
-									<p>Pelleneget  tespharetra que fringilla egugue id eget pharetra</p>
-								</div><!--abt-col end-->
-							</div>
-							<div class="col-lg-3 col-md-6 col-sm-6">
-								<div class="abt-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-									<img src="assets/img/icon8.png" alt="">
-									<h3>Best Programm</h3>
-									<p>Etiam risus neque, volutpat vel laoreet a, finibus volutpat non</p>
-								</div><!--abt-col end-->
-							</div>
-							<div class="col-lg-3 col-md-6 col-sm-6">
-								<div class="abt-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-									<img src="assets/img/icon9.png" alt="">
-									<h3>Student Support Service</h3>
-									<p>Mauris nec mi fequis ugiat, cursus tortor nec, pharetra tellus</p>
-								</div><!--abt-col end-->
-							</div>
-						</div>
-					</div>
-				</div><!--about-rw end-->
-				<div class="abt-img">
-					<ul class="masonary">
-						<li class="width1 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1414x943" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1414x943" alt=""></a></li>
-						<li class="width2 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1440x961" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1440x961" alt=""></a></li>
-						<li class="width3 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/2064x1376" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/2064x1376" alt=""></a></li>
-						<li class="width4 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1504x1004" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1504x1004" alt=""></a></li>
-						<li class="width5 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1440x960" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1440x960" alt=""></a></li>
-						<li class="width6 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1393x929" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1393x929" alt=""></a></li>
-						<li class="width7 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1840x1228" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1840x1228" alt=""></a></li>
-						<li class="width8 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1404x936" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1404x936" alt=""></a></li>
-						<li class="width9 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/750x502" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/750x502" alt=""></a></li>
-						<li class="width10 wow zoomIn" data-wow-duration="1000ms"><a href="https://via.placeholder.com/1500x1000" data-group="set1" title="" class="html5lightbox"><img src="https://via.placeholder.com/1500x1000" alt=""></a></li>
-					</ul>
-				</div><!-- abt-img end-->
-			</div>
-		</section><!--about-us-section end-->
-
-		<section class="classes-section">
-			<div class="container">
-				<div class="sec-title">
-					<h2>Our Classes</h2>
-					<p>Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris, a laoreet erat ornare sit amet. Nulla sagittis faucibus lacus</p>
-				</div><!--sec-title end-->
-				<div class="classes-sec">
-					<div class="row classes-carousel">
-						<div class="col-lg-3">
-							<div class="classes-col wow fadeInUp" data-wow-duration="1000ms">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1680x1120" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Basic English Speaking and Grammar</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Amanda Kern</a>
-										</div>
-										<strong class="price">$45</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-						<div class="col-lg-3">
-							<div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="200ms">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1970x1326" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Natural Sciences & Mathematics Courses</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Gypsy Hardinge</a>
-										</div>
-										<strong class="price">$67</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-						<div class="col-lg-3">
-							<div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1440x960" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Environmental Studies & Earth Sciences</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Margje Jutten</a>
-										</div>
-										<strong class="price">$89</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-						<div class="col-lg-3">
-							<div class="classes-col wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1296x864" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Hospitality, Leisure & Sports Courses</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Hubert Franck</a>
-										</div>
-										<strong class="price">$67</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-						<div class="col-lg-3">
-							<div class="classes-col">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1680x1120" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Basic English Speaking and Grammar</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Amanda Kern</a>
-										</div>
-										<strong class="price">$45</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-						<div class="col-lg-3">
-							<div class="classes-col">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1970x1326" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Natural Sciences & Mathematics Courses</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Gypsy Hardinge</a>
-										</div>
-										<strong class="price">$67</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-						<div class="col-lg-3">
-							<div class="classes-col">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1440x960" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Environmental Studies & Earth Sciences</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Margje Jutten</a>
-										</div>
-										<strong class="price">$89</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-						<div class="col-lg-3">
-							<div class="classes-col">
-								<div class="class-thumb">
-									<img src="https://via.placeholder.com/1296x864" alt="" class="w-100">
-									<a href="contacts.html" title="" class="crt-btn">
-										<img src="assets/img/icon10.png" alt="">
-									</a>
-								</div>
-								<div class="class-info">
-									<h3><a href="class-single.html" title="">Hospitality, Leisure & Sports Courses</a></h3>
-									<span>Mon-Fri</span>
-									<span>10 AM - 12 AM</span>
-									<div class="d-flex flex-wrap align-items-center">
-										<div class="posted-by">
-											<img src="https://via.placeholder.com/26x26" alt="">
-											<a href="#" title="">Hubert Franck</a>
-										</div>
-										<strong class="price">$67</strong>
-									</div>
-								</div>
-							</div><!--classes-col end-->
-						</div>
-					</div>
-					<div class="lnk-dv text-center">
-						<a href="classes.html" title="" class="btn-default">Classes <i class="fa fa-long-arrow-alt-right"></i></a>
-					</div>
-				</div><!--classes-sec end-->
-			</div>
-		</section><!--classes-section end-->
-
-		<section class="teachers-section">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2>Our Awesome <br /> Teachers</h2>
-					<p>Quisque id ultrices tellus, ac sodales ex. Cras nec ante viverra, bibendum justo eget, lacinia dui. Donec ligula ligula, elementum sit amet</p>
-				</div><!--section-title end-->
-				<div class="teachers">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
-							<div class="teacher">
-								<div class="teacher-img">
-									<img src="https://via.placeholder.com/1120x1680" alt="" class="w-100">
-									<div class="sc-div">
-										<ul>
-											<li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-										</ul>
-										<span><img src="assets/img/plus.png" alt=""></span>
-									</div>
-								</div>
-								<div class="teacher-info">
-									<h3><a href="teacher-single.html" title="">Polina Kerston</a></h3>
-									<span>English Teacher</span>
-								</div>
-							</div><!--teacher end-->
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
-							<div class="teacher">
-								<div class="teacher-img">
-									<img src="https://via.placeholder.com/1376x2064" alt="" class="w-100">
-									<div class="sc-div">
-										<ul>
-											<li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-										</ul>
-										<span><img src="assets/img/plus.png" alt=""></span>
-									</div>
-								</div>
-								<div class="teacher-info">
-									<h3><a href="teacher-single.html" title="">Faadi Al Rahman</a></h3>
-									<span>Instructor</span>
-								</div>
-							</div><!--teacher end-->
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
-							<div class="teacher">
-								<div class="teacher-img">
-									<img src="https://via.placeholder.com/1336x2004" alt="" class="w-100">
-									<div class="sc-div">
-										<ul>
-											<li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-										</ul>
-										<span><img src="assets/img/plus.png" alt=""></span>
-									</div>
-								</div>
-								<div class="teacher-info">
-									<h3><a href="teacher-single.html" title="">Chikelu Obasea</a></h3>
-									<span>Art Teacher</span>
-								</div>
-							</div><!--teacher end-->
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-6 col-6 full-wdth">
-							<div class="teacher">
-								<div class="teacher-img">
-									<img src="https://via.placeholder.com/1204x1804" alt="" class="w-100">
-									<div class="sc-div">
-										<ul>
-											<li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
-											<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-										</ul>
-										<span><img src="assets/img/plus.png" alt=""></span>
-									</div>
-								</div>
-								<div class="teacher-info">
-									<h3><a href="teacher-single.html" title="">Katayama Fumiki</a></h3>
-									<span>Teacher</span>
-								</div>
-							</div><!--teacher end-->
-						</div>
-					</div>
-				</div><!--teachers end-->
-			</div>
-		</section>
-
-		<section class="course-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="find-course">
-							<div class="sec-title">
-								<h2>Find Your Course</h2>
-								<p>ullam fringilla ipsum sed enim scelerisque, ac porttitor libero egestas. Donec iaculis nisi eget bibendum efficitur. Lorem ipsum dolor sit</p>
-								<h3><img src="assets/img/icon11.png" alt="">Call: <strong>+2 342 5446 67</strong></h3>
-							</div><!--sec-title end-->
-							<div class="course-img">
-								<img src="https://via.placeholder.com/476x526" alt="">
-							</div><!--course-img end-->
-						</div><!--find-course end-->
-					</div>
-					<div class="col-lg-6">
-						<div class="courses-list">
-							<div class="course-card wow fadeInLeft" data-wow-duration="1000ms">
-								<div class="d-flex flex-wrap align-items-center">
-									<ul class="course-meta">
-										<li>
-											<img src="assets/img/icon12.png" alt="">
-											29/07/2020
-										</li>
-										<li>
-											11AM to 15PM
-										</li>
-									</ul>
-									<span>FREE</span>
-								</div>
-								<h3><a href="event-single.html" title="">Digital Transformation Conference</a></h3>
-								<div class="d-flex flex-wrap">
-									<div class="posted-by">
-										<img src="https://via.placeholder.com/26x26" alt="">
-										<a href="#" title="">Amanda Kern</a>
-									</div>
-									<span class="locat"><img src="assets/img/loct.png" alt="" />43 castle road 517 district</span>
-								</div>
-							</div><!--course-card end-->
-							<div class="course-card wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="400ms">
-								<div class="d-flex flex-wrap align-items-center">
-									<ul class="course-meta">
-										<li>
-											<img src="assets/img/icon12.png" alt="">
-											29/07/2020
-										</li>
-										<li>
-											11AM to 15PM
-										</li>
-									</ul>
-									<span>$16</span>
-								</div>
-								<h3><a href="event-single.html" title="">Environment conference</a></h3>
-								<div class="d-flex flex-wrap">
-									<div class="posted-by">
-										<img src="https://via.placeholder.com/26x26" alt="">
-										<a href="#" title="">Cvita Doleschall</a>
-									</div>
-									<span class="locat"><img src="assets/img/loct.png" alt="" />43 castle road 517 district</span>
-								</div>
-							</div><!--course-card end-->
-							<div class="course-card wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="600ms">
-								<div class="d-flex flex-wrap align-items-center">
-									<ul class="course-meta">
-										<li>
-											<img src="assets/img/icon12.png" alt="">
-											29/07/2020
-										</li>
-										<li>
-											11AM to 15PM
-										</li>
-									</ul>
-									<span>$8</span>
-								</div>
-								<h3><a href="event-single.html" title="">Campus clean workshop</a></h3>
-								<div class="d-flex flex-wrap">
-									<div class="posted-by">
-										<img src="https://via.placeholder.com/26x26" alt="">
-										<a href="#" title="">Helena Brauer</a>
-									</div>
-									<span class="locat"><img src="assets/img/loct.png" alt="" />43 castle road 517 district</span>
-								</div>
-							</div><!--course-card end-->
-						</div><!--courses-list end-->
-						<a href="events.html" title="" class="all-btn">All Events <i class="fa fa-long-arrow-alt-right"></i></a>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-		</section><!--course-section end-->
-
-		<section class="blog-section">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2>Recent News</h2>
-					<p>Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris, a laoreet erat ornare sit amet. Nulla sagittis faucibus lacusMorbi lorem sem, aliquet</p>
-				</div><!--section-title end-->
-				<div class="blog-posts">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog-post">
-								<div class="blog-thumbnail">
-									<img src="https://via.placeholder.com/1680x1120" alt="" class="w-100">
-									<span class="category">English</span>
-								</div>
-								<div class="blog-info">
-									<ul class="meta">
-										<li><a href="#" title="">17/09/2020</a></li>
-										<li><a href="#" title="">by Admin</a></li>
-										<li><img src="assets/img/icon13.png" alt="" /><a href="#" title="">Teachers,</a><a href="#" title=""> School</a></li>
-									</ul>
-									<h3><a href="post.html" title="">Campus clean workshop</a></h3>
-									<p>Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris, a laoreet erat ornare sit amet</p>
-									<a href="post.html" title="" class="read-more">Read <i class="fa fa-long-arrow-alt-right"></i></a>
-								</div>
-							</div><!--blog-post end-->
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog-post">
-								<div class="blog-thumbnail">
-									<img src="https://via.placeholder.com/1440x960" alt="" class="w-100">
-									<span class="category">English</span>
-								</div>
-								<div class="blog-info">
-									<ul class="meta">
-										<li><a href="#" title="">17/09/2020</a></li>
-										<li><a href="#" title="">by Admin</a></li>
-										<li><img src="assets/img/icon13.png" alt="" /><a href="#" title="">Teachers,</a><a href="#" title=""> School</a></li>
-									</ul>
-									<h3><a href="post.html" title="">Campus clean workshop</a></h3>
-									<p>Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris, a laoreet erat ornare sit amet</p>
-									<a href="post.html" title="" class="read-more">Read <i class="fa fa-long-arrow-alt-right"></i></a>
-								</div>
-							</div><!--blog-post end-->
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="blog-post">
-								<div class="blog-thumbnail">
-									<img src="https://via.placeholder.com/1680x1120" alt="" class="w-100">
-									<span class="category">English</span>
-								</div>
-								<div class="blog-info">
-									<ul class="meta">
-										<li><a href="#" title="">17/09/2020</a></li>
-										<li><a href="#" title="">by Admin</a></li>
-										<li><img src="assets/img/icon13.png" alt="" /><a href="#" title="">Teachers,</a><a href="#" title=""> School</a></li>
-									</ul>
-									<h3><a href="post.html" title="">Campus clean workshop</a></h3>
-									<p>Nam mattis felis id sodales rutrum. Nulla ornare tristique mauris, a laoreet erat ornare sit amet</p>
-									<a href="post.html" title="" class="read-more">Read <i class="fa fa-long-arrow-alt-right"></i></a>
-								</div>
-							</div><!--blog-post end-->
-						</div>
-					</div>
-				</div><!--blog-posts end-->
-			</div>
-		</section><!--blog-section end-->
-
-		
-
-		<footer>
-			<div class="container">
-				<div class="top-footer">
-					<div class="row">
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="widget widget-about">
-								<img src="./src/img/futureLogo.png" alt="">
-								<p>Vivamus porta efficitur nibh nec convallis. Vestibulum egestas eleifend justo. Ut tellus ipsum, accumsan</p>
-							</div><!--widget-about end-->
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="widget widget-contact">
-								<ul class="contact-add">
-									<li>
-										<div class="contact-info">
-											<img src="assets/img/icon1.png" alt="">
-											<div class="contact-tt">
-												<h4>Call</h4>
-												<span>+2 342 5446 67</span>
-											</div>
-										</div><!--contact-info end-->
-									</li>
-									<li>
-										<div class="contact-info">
-											<img src="assets/img/icon2.png" alt="">
-											<div class="contact-tt">
-												<h4>Work Time</h4>
-												<span>Mon - Fri 8 AM - 5 PM</span>
-											</div>
-										</div><!--contact-info end-->
-									</li>
-									<li>
-										<div class="contact-info">
-											<img src="assets/img/icon3.png" alt="">
-											<div class="contact-tt">
-												<h4>Address</h4>
-												<span>Franklin St, Greenpoint Ave</span>
-											</div>
-										</div><!--contact-info end-->
-									</li>
-								</ul>
-							</div><!--widget-contact end-->
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="widget widget-links">
-								<h3 class="widget-title">Quick Links</h3>
-								<ul>
-									<li><a href="about.html" title="">About Us </a></li>
-									<li><a href="classes.html" title="">Our Classes</a></li>
-									<li><a href="teachers.html" title="">School Teachers </a></li>
-									<li><a href="events.html" title="">Recent Events </a></li>
-									<li><a href="blog.html" title="">Our News </a></li>
-									<li><a href="schedule.html" title="">Schedule </a></li>
-								</ul>
-							</div><!--widget-links end-->
-						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6">
-							<div class="widget widget-iframe">
-								<iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-							</div><!--widget-iframe end-->
-						</div>
-					</div>
-				</div><!--top-footer end-->
-				<div class="bottom-footer">
-					<div class="row align-items-center">
-						<div class="col-lg-6 col-md-6 col-sm-6">
-							<p>© Copyrights 2020 Future All rights reserved</p>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6">
-							<ul class="social-links">
-								<li><a href="#" title=""><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#" title=""><i class="fab fa-linkedin-in"></i></a></li>
-								<li><a href="#" title=""><i class="fab fa-instagram"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div><!--bottom-footer end-->
-			</div>
-		</footer><!--footer end-->
-
-		<!--back to top begin-->
-		<button class="back-to-top">
-			<i class="fas fa-arrow-up"></i>
-		</button>
-		<!--back to top end-->
-
-	</div>
+                                    <a href="selectSchool.html"
+                                        class="btn btn-dark rounded-pill py-sm-3 px-sm-5 animated slideInRight">Our
+                                        Classes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
 
 
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/isotope.js"></script>
-<script src="assets/js/html5lightbox.js"></script>
-<script src="assets/js/slick.min.js"></script>
-<script src="assets/js/tweenMax.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/scripts.js"></script>
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Learn More About Our Mission and Cultural Activities</h1>
+                        <p>At our school in Libya, we are dedicated to providing a well-rounded education that blends
+                            academic excellence with a celebration of our rich cultural heritage. Our programs aim to
+                            empower students with knowledge, critical thinking skills, and a deep appreciation for
+                            Libyan traditions and values.</p>
+                        <p class="mb-4">From engaging classroom experiences to vibrant cultural events, we strive to
+                            nurture well-rounded individuals who are proud of their roots and ready to contribute to the
+                            global community. Join us in building a brighter future for our students and our country
+                            through education and cultural enrichment.</p>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <a class="btn btn-primary rounded-pill py-3 px-5" href="./about.html">Read More</a>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle flex-shrink-0" src="./img/image20.png" alt=""
+                                        style="width: 45px; height: 45px;">
+                                    <div class="ms-3">
+                                        <h6 class="text-primary mb-1">Mrs. Mariam Faroun</h6>
+                                        <small>Founder & School principle</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="./img/image3.jpeg" alt="">
+                            </div>
+                            <div class="col-6 text-start" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="./img/image4.jpeg" alt="">
+                            </div>
+                            <div class="col-6 text-end" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="./img/image5.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
 
 
+
+        <!-- Classes Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Curriculum</h1>
+                    <p>Our curriculum is thoughtfully designed to provide a balanced education, combining academic rigor
+                        with practical skills.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="./img/image6.jpeg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Chemistry</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="./img/image20.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Mr Mohab Nassar</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="./img/image7.jpeg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Biology</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="./img/image20.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Mr Mohab Nassar </h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="./img/image8.jpeg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">English</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="./img/image20.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Mrs Zainab</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="./img/image9.jpeg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">ICT</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="./img/image20.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Mr Adeel kashif</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="./img/image10.jpeg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Mathmatics</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="./img/image20.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Mrs Miss Mayada</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="classes-item">
+                            <div class="bg-light rounded-circle w-75 mx-auto p-3">
+                                <img class="img-fluid rounded-circle" src="./img/image11.jpeg" alt="">
+                            </div>
+                            <div class="bg-light rounded p-4 pt-5 mt-n5">
+                                <a class="d-block text-center h3 mt-3 mb-4" href="">Physics</a>
+                                <div class="d-flex align-items-center justify-content-between mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <img class="rounded-circle flex-shrink-0" src="./img/image20.png" alt=""
+                                            style="width: 45px; height: 45px;">
+                                        <div class="ms-3">
+                                            <h6 class="text-primary mb-1">Mrs Summar Afreen</h6>
+                                            <small>Teacher</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Classes End -->
+
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Principals</h1>
+                    <p>At the core of our values lies a steadfast commitment to integrity, innovation, and excellence.
+                        We believe in fostering a culture of trust, where ethical leadership and continuous improvement
+                        drive our success.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="img/team-1.jpg" alt="">
+                            <div class="team-text">
+                                <h3>Mariam Faroun</h3>
+                                <p>Principal of Future Schools</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="./img/image18.jpeg" alt="">
+                            <div class="team-text">
+                                <h3>Mehnaz Adel</h3>
+                                <p>Principal of Future leaders</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item position-relative">
+                            <img class="img-fluid rounded-circle w-75" src="./img/image19.jpeg" alt="">
+                            <div class="team-text">
+                                <h3>Ahsan Bashir</h3>
+                                <p>Principal of Bright Future</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Get In Touch</h3>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Alnofliin Street Tripoli-Libya</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+218912222434</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Maryammutafa434@gmail.com</p>
+                        <P class="mb-2"><i class="fab fa-facebook-f me-4"></i><a
+                                href="https://www.facebook.com/share/12FjU5tEMzf/?mibextid=wwXIfr"
+                                style="color: #859BA0; text-decoration:none;">Bright Future School</a></p>
+                        <p class="mb-2"><i class="fab fa-facebook-f me-4"></i><a
+                                href="https://www.facebook.com/profile.php?id=100064158844359&mibextid=ZbWKwL"
+                                style="color: #859BA0; text-decoration:none;">Future Leaders School</a></p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Quick Links</h3>
+                        <a class="btn btn-link text-white-50" href="./index.html">Home</a>
+                        <a class="btn btn-link text-white-50" href="./about.html">About Us</a>
+                        <a class="btn btn-link text-white-50" href="./blog.html">Blog</a>
+                        <a class="btn btn-link text-white-50" href="./facility.html">School Facilities</a>
+                        <a class="btn btn-link text-white-50" href="./contact.html">Contact Us</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Photo Gallery</h3>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./img/image12.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./img/image13.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./img/image14.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./img/image15.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./img/image16.jpeg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="./img/image17.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white mb-4">Newsletter</h3>
+                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; Future Schools, All Right Reserved.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Designed By Software Developement Team
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
